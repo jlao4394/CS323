@@ -1,0 +1,7 @@
+(bf, 4, NULL, NULL, b, f)
+(bfa, 8, NULL, NULL, bf, a)
+(gbfa, 15, NULL, NULL, g, bfa)
+(dc, 22, NULL, NULL, d, c)
+(gbfah, 31, NULL, NULL, gbfa, h)
+(dcgbfah, 53, NULL, NULL, dc, gbfah)
+(edcgbfah, 100, NULL, NULL, e, dcgbfah)

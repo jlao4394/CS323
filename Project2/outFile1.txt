@@ -1,0 +1,15 @@
+listHead --> ("a", 4, NULL) --> NULL
+listHead --> ("b", 1, "a") --> ("a", 4, NULL) --> NULL
+listHead --> ("b", 1, "a") --> ("a", 4, "c") --> ("c", 12, NULL) --> NULL
+listHead --> ("b", 1, "a") --> ("a", 4, "d") --> ("d", 10, "c") --> ("c", 12, NULL) --> NULL
+listHead --> ("b", 1, "a") --> ("a", 4, "d") --> ("d", 10, "c") --> ("c", 12, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("b", 1, "f") --> ("f", 3, "a") --> ("a", 4, "d") --> ("d", 10, "c") --> ("c", 12, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("b", 1, "f") --> ("f", 3, "a") --> ("a", 4, "g") --> ("g", 7, "d") --> ("d", 10, "c") --> ("c", 12, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("b", 1, "f") --> ("f", 3, "a") --> ("a", 4, "g") --> ("g", 7, "d") --> ("d", 10, "c") --> ("c", 12, "h") --> ("h", 16, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("bf", 4, "a") --> ("a", 4, "g") --> ("g", 7, "d") --> ("d", 10, "c") --> ("c", 12, "h") --> ("h", 16, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("g", 7, "bfa") --> ("bfa", 8, "d") --> ("d", 10, "c") --> ("c", 12, "h") --> ("h", 16, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("d", 10, "c") --> ("c", 12, "gbfa") --> ("gbfa", 15, "h") --> ("h", 16, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("gbfa", 15, "h") --> ("h", 16, "dc") --> ("dc", 22, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("dc", 22, "gbfah") --> ("gbfah", 31, "e") --> ("e", 47, NULL) --> NULL
+listHead --> ("e", 47, "dcgbfah") --> ("dcgbfah", 53, NULL) --> NULL
+listHead --> ("edcgbfah", 100, NULL) --> NULL
